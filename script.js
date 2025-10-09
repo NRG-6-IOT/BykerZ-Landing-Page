@@ -31,6 +31,12 @@
       'vision-text': 'To be the leading smart mobility platform that revolutionizes preventive maintenance and connectivity in the two-wheel ecosystem.',
       'project-title': 'Our Project',
       'team-title': 'Meet the Team',
+      'team-role-1': 'Lead Architect',
+      'team-role-2': 'Project Manager',
+      'team-role-3': 'Frontend Developer',
+      'team-role-4': 'Backend Developer',
+      'team-role-5': 'IoT Specialist',
+      'team-role-6': 'UI/UX Designer',
       'cta-title': 'Upgrade your bike to the next level.',
       'cta-text': 'Join the BykerZ community and experience the future of motorcycling.',
       'btn-get-started': '<span class="material-icons ml-2">two_wheeler</span>\n                            Get Started',
@@ -38,7 +44,8 @@
       'footer-features': 'Features',
       'footer-about': 'About Us',
       'footer-team': 'Team',
-      'footer-terms': 'Terms of Service'
+      'footer-terms': 'Terms of Service',
+      'footer-copyright': '© 2025 NRG6. All rights reserved.'
     },
     es: {
       'nav-features': 'Características',
@@ -71,6 +78,12 @@
       'vision-text': 'Ser la plataforma líder en movilidad inteligente que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.',
       'project-title': 'Nuestro Proyecto',
       'team-title': 'Conoce al Equipo',
+      'team-role-1': 'Arquitecto Principal',
+      'team-role-2': 'Gerente de Proyecto',
+      'team-role-3': 'Desarrollador Frontend',
+      'team-role-4': 'Desarrollador Backend',
+      'team-role-5': 'Especialista IoT',
+      'team-role-6': 'Diseñador UI/UX',
       'cta-title': 'Lleva tu moto al siguiente nivel.',
       'cta-text': 'Únete a la comunidad BykerZ y experimenta el futuro del motociclismo.',
       'btn-get-started': '<span class="material-icons ml-2">two_wheeler</span>\n                            Comenzar',
@@ -78,7 +91,8 @@
       'footer-features': 'Características',
       'footer-about': 'Sobre Nosotros',
       'footer-team': 'Equipo',
-      'footer-terms': 'Términos del Servicio'
+      'footer-terms': 'Términos del Servicio',
+      'footer-copyright': '© 2025 NRG6. Todos los derechos reservados.'
     }
   };
 
