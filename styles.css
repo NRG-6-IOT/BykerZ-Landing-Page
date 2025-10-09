@@ -17,7 +17,7 @@
 
 /* CSS Variables for theming */
 :root {
-    --primary: #F97316;
+    --primary: #FF6B35;
     --background-light: #FFFFFF;
     --background-dark: #111827;
     --card-light: #F9FAFB;
@@ -515,13 +515,14 @@ body {
 
 /* Project placeholders */
 .project-placeholder {
-    height: 16rem;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem; /* p-2 */
     background-color: var(--background-light);
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .dark .project-placeholder {
@@ -579,7 +580,7 @@ body {
 
 /* CTA Section */
 .cta-section {
-    background-color: rgba(249, 115, 22, 0.9);
+    background-color: rgb(255, 107, 53);
 }
 
 .cta-container {
@@ -741,4 +742,52 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+}
+
+
+/* Plans section overrides */
+#plans .feature-card {
+    background-color: var(--primary);
+    text-align: center;
+    color: #FFFFFF; /* fallback text color */
+}
+
+#plans .feature-icon {
+    margin-left: auto;
+    margin-right: auto; /* center the icon block */
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF; /* white icon */
+}
+
+#plans .feature-title {
+    color: #FFFFFF;
+    font-size: 1.5rem; /* larger titles */
+    font-weight: 700;
+}
+
+@media (min-width: 640px) {
+    #plans .feature-title {
+        font-size: 1.75rem;
+    }
+}
+
+#plans .feature-description {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+
+/* Video embeds inside project placeholders */
+.project-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+/* Team video wrapper: centered and slightly separated */
+#team .team-video {
+    margin-top: 2rem; /* not too far from team presentation */
+    max-width: 56rem; /* nice readable width */
+    margin-left: auto;
+    margin-right: auto;
 }
