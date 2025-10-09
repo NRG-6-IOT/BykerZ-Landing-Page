@@ -7,7 +7,8 @@
       'nav-team': 'Team',
       'hero-title': 'Your Motorcycle, <span class="text-primary">Smarter</span>.',
       'hero-subtitle': 'Connect your bike to the digital world for enhanced safety, performance, and peace of mind.',
-      'btn-start': 'Start',
+      'btn-start': 'Go to Web <span class="material-icons ml-2">web</span>',
+      'btn-mobile': 'Go to Mobile App <span class="material-icons ml-2">smartphone</span>',
       'btn-explore': 'Explore <span class="material-icons ml-2">arrow_downward</span>',
       'features-title': 'Features',
       'features-desc': 'Everything you need to stay connected and safe on the road.',
@@ -46,7 +47,8 @@
       'nav-team': 'Equipo',
       'hero-title': 'Tu motocicleta, <span class="text-primary">más inteligente</span>.',
       'hero-subtitle': 'Conecta tu moto al mundo digital para mayor seguridad, rendimiento y tranquilidad.',
-      'btn-start': 'Comenzar',
+      'btn-start': 'Ir a Web <span class="material-icons ml-2">web</span>',
+      'btn-mobile': 'Ir a la App Móvil <span class="material-icons ml-2">smartphone</span>',
       'btn-explore': 'Explorar <span class="material-icons ml-2">arrow_downward</span>',
       'features-title': 'Características',
       'features-desc': 'Todo lo que necesitas para mantenerte conectado y seguro en la carretera.',
@@ -80,7 +82,7 @@
     }
   };
 
-  const htmlKeys = new Set(['hero-title','btn-explore','btn-get-started','btn-contact-sales']);
+  const htmlKeys = new Set(['hero-title','btn-start','btn-mobile','btn-explore','btn-get-started','btn-contact-sales']);
 
   function setLanguage(lang) {
     const dict = translations[lang] || translations.en;
@@ -117,4 +119,3 @@
     }
   });
 })();
-
