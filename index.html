@@ -6,24 +6,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<style>
-        .material-icons {
-            font-family: 'Material Icons';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;display: inline-block;
-            line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
-            -moz-osx-font-smoothing: grayscale;
-            font-feature-settings: 'liga';
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar">
@@ -36,10 +18,16 @@
 </div>
 <div class="nav-menu">
 <div class="nav-links">
-<a class="nav-link" href="#features">Features</a>
-<a class="nav-link" href="#about">About Us</a>
-<a class="nav-link" href="#project">Our Project</a>
-<a class="nav-link" href="#team">Team</a>
+<a class="nav-link" id="nav-features" href="#features">Features</a>
+<a class="nav-link" id="nav-about" href="#about">About Us</a>
+<a class="nav-link" id="nav-project" href="#project">Our Project</a>
+<a class="nav-link" id="nav-team" href="#team">Team</a>
+<div class="lang-switcher ml-4">
+  <select id="language-select" class="lang-select" aria-label="Language selector">
+    <option value="en">EN</option>
+    <option value="es">ES</option>
+  </select>
+</div>
 </div>
 </div>
 </div>
@@ -49,17 +37,21 @@
 <section class="hero" id="hero">
 <div class="container hero-grid">
 <div class="hero-content">
-<h1 class="hero-title">
+<h1 class="hero-title" id="hero-title">
                         Your Motorcycle, <span class="text-primary">Smarter</span>.
                     </h1>
-<p class="hero-subtitle">
+<p class="hero-subtitle" id="hero-subtitle">
                         Connect your bike to the digital world for enhanced safety, performance, and peace of mind.
                     </p>
 <div class="hero-buttons">
-<a class="btn btn-primary" href="#">
-                            Start
+<a class="btn btn-primary" id="btn-start" href="#">
+                            Go to Web <span class="material-icons ml-2">web</span>
                         </a>
-<a class="btn btn-secondary" href="#features">
+    <a class="btn btn-primary" id="btn-mobile" href="#">
+        Go to Mobile App
+        <span class="material-icons ml-2">smartphone</span>
+    </a>
+<a class="btn btn-secondary" id="btn-explore" href="#features">
                             Explore
                             <span class="material-icons ml-2">arrow_downward</span>
 </a>
@@ -100,8 +92,8 @@
 <section class="section section-alt" id="features">
 <div class="container">
 <div class="section-header">
-<h2 class="section-title">Features</h2>
-<p class="section-description">
+<h2 class="section-title" id="features-title">Features</h2>
+<p class="section-description" id="features-desc">
                         Everything you need to stay connected and safe on the road.
                     </p>
 </div>
@@ -110,43 +102,43 @@
 <div class="feature-icon">
 <span class="material-icons">timeline</span>
 </div>
-<h3 class="feature-title">Real-Time Monitoring</h3>
-<p class="feature-description">Track fuel, engine temp, tire pressure, and more, all from your phone.</p>
+<h3 class="feature-title" id="feature1-title">Real-Time Monitoring</h3>
+<p class="feature-description" id="feature1-desc">Track fuel, engine temp, tire pressure, and more, all from your phone.</p>
 </div>
 <div class="feature-card">
 <div class="feature-icon">
 <span class="material-icons">notifications_active</span>
 </div>
-<h3 class="feature-title">Preventive Alerts</h3>
-<p class="feature-description">Get notified before a small issue becomes a big problem for you and your mechanic.</p>
+<h3 class="feature-title" id="feature2-title">Preventive Alerts</h3>
+<p class="feature-description" id="feature2-desc">Get notified before a small issue becomes a big problem for you and your mechanic.</p>
 </div>
 <div class="feature-card">
 <div class="feature-icon">
 <span class="material-icons">history</span>
 </div>
-<h3 class="feature-title">Service History</h3>
-<p class="feature-description">Keep a digital log of all repairs, services, and expenses in one place.</p>
+<h3 class="feature-title" id="feature3-title">Service History</h3>
+<p class="feature-description" id="feature3-desc">Keep a digital log of all repairs, services, and expenses in one place.</p>
 </div>
 <div class="feature-card">
 <div class="feature-icon">
 <span class="material-icons">link</span>
 </div>
-<h3 class="feature-title">Mechanic Connection</h3>
-<p class="feature-description">Share live data with your trusted mechanic for faster, more accurate diagnostics.</p>
+<h3 class="feature-title" id="feature4-title">Mechanic Connection</h3>
+<p class="feature-description" id="feature4-desc">Share live data with your trusted mechanic for faster, more accurate diagnostics.</p>
 </div>
 <div class="feature-card">
 <div class="feature-icon">
 <span class="material-icons">assessment</span>
 </div>
-<h3 class="feature-title">Health Reports</h3>
-<p class="feature-description">Automatically generate vehicle health reports to track performance over time.</p>
+<h3 class="feature-title" id="feature5-title">Health Reports</h3>
+<p class="feature-description" id="feature5-desc">Automatically generate vehicle health reports to track performance over time.</p>
 </div>
 <div class="feature-card">
 <div class="feature-icon">
 <span class="material-icons">security</span>
 </div>
-<h3 class="feature-title">Enhanced Security</h3>
-<p class="feature-description">Anticipate failures and ride with confidence knowing your bike is being watched.</p>
+<h3 class="feature-title" id="feature6-title">Enhanced Security</h3>
+<p class="feature-description" id="feature6-desc">Anticipate failures and ride with confidence knowing your bike is being watched.</p>
 </div>
 </div>
 </div>
@@ -154,7 +146,7 @@
 <section class="section" id="about">
 <div class="container">
 <div class="section-header mb-12">
-<h2 class="section-title">Our Mission and Vision</h2>
+<h2 class="section-title" id="about-title">Our Mission and Vision</h2>
 </div>
 <div class="grid grid-2">
 <div class="info-card">
@@ -162,9 +154,9 @@
 <div class="info-card-icon">
 <span class="material-icons">rocket_launch</span>
 </div>
-<h3 class="info-card-title">Mission</h3>
+<h3 class="info-card-title" id="mission-title">Mission</h3>
 </div>
-<p class="info-card-text">
+<p class="info-card-text" id="mission-text">
                             Transformar la gestión de motocicletas combinando tecnología IoT y análisis de datos para ofrecer seguridad, eficiencia y confianza a propietarios y mecánicos.
                         </p>
 </div>
@@ -173,9 +165,9 @@
 <div class="info-card-icon">
 <span class="material-icons">visibility</span>
 </div>
-<h3 class="info-card-title">Vision</h3>
+<h3 class="info-card-title" id="vision-title">Vision</h3>
 </div>
-<p class="info-card-text">
+<p class="info-card-text" id="vision-text">
                             Ser la plataforma líder en movilidad inteligente que revolucione el mantenimiento preventivo y la conexión en el ecosistema de vehículos de dos ruedas.
                         </p>
 </div>
@@ -185,7 +177,7 @@
 <section class="section section-alt" id="project">
 <div class="container">
 <div class="section-header mb-12">
-<h2 class="section-title">Our Project</h2>
+<h2 class="section-title" id="project-title">Our Project</h2>
 </div>
 <div class="grid grid-2">
 <div class="project-placeholder">
@@ -200,7 +192,7 @@
 <section class="section" id="team">
 <div class="container">
 <div class="section-header mb-12">
-<h2 class="section-title">Meet the Team</h2>
+<h2 class="section-title" id="team-title">Meet the Team</h2>
 </div>
 <div class="grid grid-3">
 <div class="team-card">
@@ -263,19 +255,16 @@
 </section>
 <section class="cta-section">
 <div class="cta-container">
-<h2 class="cta-title">
+<h2 class="cta-title" id="cta-title">
                     Upgrade your bike to the next level.
                 </h2>
-<p class="cta-text">Join the BykerZ community and experience the future of motorcycling.</p>
+<p class="cta-text" id="cta-text">Join the BykerZ community and experience the future of motorcycling.</p>
 <div class="cta-buttons">
-<a class="btn btn-white" href="#">
+<a class="btn btn-white" id="btn-get-started" href="#">
 <span class="material-icons ml-2">two_wheeler</span>
                             Get Started
                         </a>
-<a class="btn btn-outline-white" href="#">
-<span class="material-icons ml-2">contact_support</span>
-                            Contact Sales
-                        </a>
+
 </div>
 </div>
 </section>
@@ -284,10 +273,9 @@
 <div class="footer-container">
 <div class="footer-content">
 <div class="footer-links">
-<a class="footer-link" href="#features">Features</a>
-<a class="footer-link" href="#about">About Us</a>
-<a class="footer-link" href="#team">Team</a>
-<a class="footer-link" href="#">Terms of Service</a>
+<a class="footer-link" id="footer-features" href="#features">Features</a>
+<a class="footer-link" id="footer-about" href="#about">About Us</a>
+<a class="footer-link" id="footer-team" href="#team">Team</a>
 </div>
 <div class="footer-copyright">
 <p class="text-center">© 2025 NRG6. All rights reserved.</p>
@@ -295,4 +283,5 @@
 </div>
 </div>
 </footer>
+</script>
 </body></html>
